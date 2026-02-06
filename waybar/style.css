@@ -1,0 +1,47 @@
+/* ~/.config/waybar/style.css */
+* {
+    border: none;
+    border-radius: 0; /* Bloques rectos estilo DWM */
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #1a1a1a; /* Fondo oscuro tipo terminal */
+    color: #ffffff;
+}
+
+/* El cuadro de los Workspaces (Etiquetas de DWM) */
+#workspaces button {
+    padding: 0 10px;
+    background: #282828;
+    color: #ebdbb2;
+}
+
+#workspaces button.active {
+    background: #8e3535; /* Tu ROJO OSCURO aquí */
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background: #ebdbb2;
+    color: #282828;
+}
+
+/* El título de la ventana (Centro) */
+#window {
+    padding: 0 15px;
+}
+
+/* Módulos de la derecha (Reloj, Batería, etc.) */
+#clock, #battery, #cpu, #memory, #pulseaudio, #idle_inhibitor {
+    padding: 0 10px;
+    background: #3c3836; /* Un gris oscuro para separar bloques */
+    margin-left: 2px;
+}
+
+#clock {
+    background: #8e3535; /* También el reloj en rojo oscuro */
+    color: #ffffff;
+}

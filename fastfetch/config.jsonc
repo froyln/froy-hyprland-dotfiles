@@ -1,0 +1,134 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    //"source": "endeavour_small"
+    //"source": "~/.config/fastfetch/logos/anime-typing.txt"
+    "source": "~/.config/fastfetch/logos/anime-eyes.txt",
+    "color": {"1": "#b14242"}
+    // "height": 14,
+    // "width": 25,
+    // "padding": {
+    //   "top": 1,
+    //   "left": 1,
+    //   "right": 2,
+    //   "bottom": 3
+    // }
+  },
+  "display": {
+    "separator": " : ",
+    "color": {
+        "title": "#b14242"     // Title color
+    },
+  },
+  "modules": [
+    {
+       "type": "title",
+       "key": " ",
+       "keyColor": "#b14242",
+       //"color": {title: "#b14242"},
+    },
+    //{
+    //  "type": "title",
+    //  "keyWidth": 10,
+    //  "format": "{6}{7}{8}"
+    //},
+    {
+      "type": "custom",
+      // "format": "┌──────────────────────────────────────────┐"
+      "format": " ─────────────────────────── "
+      // "format": "----------------------------"
+    },
+    {
+      "type": "os",
+      "key": " ",
+      "keyColor": "#b14242"
+    },
+    {
+      "type": "kernel",
+      "key": " ",
+      "keyColor": "#b14242"
+    },
+    //{
+    //  "type": "packages",
+    //  "key": "󰏗 ",
+    //  "keyColor": "#b14242"
+    //},
+    {
+      "type": "display",
+      "key": " ",
+      "keyColor": "#b14242"
+    },
+    {
+      "type": "wm",
+      "key": " ",
+      "keyColor": "#b14242"
+    },
+    {
+      "type": "terminal",
+      "key": " ",
+      "keyColor": "#b14242"
+    },
+    {
+      "type": "cpu",
+      "format": "{1}",
+      "key": " ",
+      "keyColor": "#b14242"
+    },
+    {
+       "type": "gpu",
+       "format": "{2}",
+       "key": " ",
+       "keyColor": "#b14242"
+    },
+    // {
+    //   "type": "gpu",
+    //   "format": "{3}",
+    //   "key": " ",
+    //   "keyColor": "magenta"
+    // },
+    {
+      "type": "memory",
+      "key": "󰍛 ",
+      "keyColor": "#b14242"
+    },
+    {
+      "type": "disk",
+      "key": "󰋊 ",
+      "keyColor": "#b14242",
+      "format": "{1}/{2} ({3})"
+    },
+    //{
+    //  "type": "command",
+    //  "key": "󱦟 ",
+    //  "keyColor": "#b14242",
+    //  "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+    //},
+    //{
+    //  "type": "uptime",
+    //  "key": "󱫐 ",
+    //  "keyColor": "#b14242"
+    //},
+    //{
+    //  "type": "localip",
+    //  "key": "󰩟 ",
+    //  "keyColor": "#b14242",
+    //  "format": "{1} ({4})"
+    //},
+    {
+       "type": "custom",
+    //   "format": "└──────────────────────────────────────────┘"
+       "format": " ─────────────────────────── "
+    },
+    //"break",
+    //{
+    //  "type": "colors",
+    //  "paddingLeft": 2,
+    //  "symbol": "circle"
+    //},
+    // {
+    //   "type": "custom",
+    //   "format": "\u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[90m "
+    // },
+    "break"
+  ]
+}

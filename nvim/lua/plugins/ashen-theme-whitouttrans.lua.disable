@@ -1,0 +1,16 @@
+return {
+  -- 1. Descargar el tema
+  {
+    "ficd0/ashen.nvim",
+    lazy = false, -- Queremos que se cargue al inicio
+    priority = 1000, -- Prioridad alta para evitar parpadeos al abrir nvim
+  },
+
+  -- 2. Configurar LazyVim para que lo use por defecto
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "ashen",
+    },
+  },
+}
